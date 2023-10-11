@@ -46,3 +46,14 @@ az servicebus namespace create --name $appname --resource-group $appname --sku S
 ```powershell
 az acr create --name $appname --resource-group $appname --sku Basic
 ```
+
+## Creating the AKS cluster
+
+```powershell
+az feature register --name EnablePodIdentityPreview --namespace Microsoft.ContainerService
+az extension add --name aks-preview
+
+az aks create --name $appname --resource-group $appname --node-vm-size Standard_B2s --node-count 2 --attach-acr $appname --enable-pod-identity --network-plugin azure
+
+az aks get-credentials --name $appname --resource-group $appname
+```
