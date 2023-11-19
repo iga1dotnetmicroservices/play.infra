@@ -26,3 +26,14 @@ spec:
   hostname: iga1playeconomy.eastus.cloudapp.azure.com
   prefix: /inventory-svc/
   service: inventory-service.inventory
+
+---
+apiVersion: getambassador.io/v3alpha1
+kind: Mapping
+metadata:
+  name: trading-mapping
+spec:
+  hostname: iga1playeconomy.eastus.cloudapp.azure.com
+  prefix: /trading-svc/
+  service: trading-service.trading
+  use_websocket: true
