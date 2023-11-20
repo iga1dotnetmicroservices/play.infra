@@ -37,3 +37,13 @@ spec:
   prefix: /trading-svc/
   service: trading-service.trading
   use_websocket: true
+
+---
+apiVersion: getambassador.io/v3alpha1
+kind: Mapping
+metadata:
+  name: frontend-mapping
+spec:
+  hostname: iga1playeconomy.eastus.cloudapp.azure.com
+  prefix: /
+  service: frontend-client.frontend
