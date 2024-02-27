@@ -1,11 +1,11 @@
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
-  name: iga1playeconomy-tls-cert
+  name: iga1dotapprentice-tls-cert
 spec:
-  secretName: iga1playeconomy-tls
+  secretName: iga1dotapprentice-tls
   issuerRef:
     name: letsencrypt-prod
     kind: ClusterIssuer
   dnsNames:
-    - "iga1playeconomy.eastus.cloudapp.azure.com"
+    - "iga1dotapprentice.eastus.cloudapp.azure.com"

@@ -9,7 +9,7 @@ spec:
   hostBinding:
     namespace:
       from: SELF
-
+      
 ---
 apiVersion: getambassador.io/v3alpha1
 kind: Listener

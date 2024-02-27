@@ -7,7 +7,7 @@ spec:
     - port: 80
       targetPort: 8089
   selector:
-    acme.cert-manager.io/http01-solver: "true"
+    acme.cert-manager.io/http01-solver: "true" 
 
 ---
 apiVersion: getambassador.io/v3alpha1
@@ -15,7 +15,7 @@ kind: Mapping
 metadata:
   name: acme-challenge-mapping
 spec:
-  hostname: iga1playeconomy.eastus.cloudapp.azure.com
+  hostname: iga1dotapprentice.eastus.cloudapp.azure.com
   prefix: /.well-known/acme-challenge/
   rewrite: ""
   service: acme-challenge-service

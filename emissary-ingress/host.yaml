@@ -1,10 +1,10 @@
 apiVersion: getambassador.io/v3alpha1
 kind: Host
 metadata:
-  name: iga1playeconomy-host
+  name: iga1dotapprentice-host
 spec:
-  hostname: iga1playeconomy.eastus.cloudapp.azure.com
+  hostname: iga1dotapprentice.eastus.cloudapp.azure.com
   acmeProvider:
-    email: igor.clemente@aerosoftcargas.com.br
+    email: igor.clm20@gmail.com
   tlsSecret:
-    name: iga1playeconomy-tls
+    name: iga1dotapprentice-tls
